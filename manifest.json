@@ -1,0 +1,20 @@
+{
+  "name": "ZhiHuiShuAutoAns",
+  "description": "Listens for space key press, reads specific DOM text, calls DashScope API, displays and copies the result.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
